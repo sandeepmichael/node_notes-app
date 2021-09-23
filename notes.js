@@ -17,7 +17,7 @@ const readNote = (title) => {
 const listNotes = () => {
     console.log(chalk.yellow.inverse('Your notes'))
     const notes = loadNotes()
-    notes.forEach(note => {
+    notes.map(note => {
         console.log(note.title)
     });
 }
